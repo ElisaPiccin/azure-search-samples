@@ -1,3 +1,8 @@
 bin
 obj
 *.sln
+Labfiles/.env
+/Labfiles/01-azure-search/Python/margies-travel/__pycache__
+Labfiles/01-azure-search/Python/margies-travel/.env
+Labfiles/01-azure-search/modify-search/.env
+Labfiles/01-azure-search/Python/margies-travel/.env

@@ -4,6 +4,13 @@ rem Set values for your Search service
 set url=YOUR_SEARCH_URL
 set admin_key=YOUR_ADMIN_KEY
 
+rem -----
+echo Deleting the index to remove all documents...
+call curl -X DELETE %url%/indexes/margies-custom-index?api-version=2020-06-30 -H "api-key: %admin_key%"
+
+rem wait
+timeout /t 2 /nobreak
+
 echo -----
 echo Updating the skillset...
 call curl -X PUT %url%/skillsets/margies-custom-skillset?api-version=2020-06-30 -H "Content-Type: application/json" -H "api-key: %admin_key%" -d @update-skillset.json
