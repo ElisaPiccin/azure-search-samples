@@ -63,7 +63,8 @@ namespace OptimizeDataIndexing
                     
                     return result;
                 }
-                catch (RequestFailedException ex)
+                //catch (RequestFailedException ex)
+                catch (RequestFailedException)
                 {
                     Console.WriteLine("[Batch starting at doc {0} failed]", id);
                     //Console.WriteLine("[Attempt: {0} of {1} Failed] - Error: {2} \n", attempts, maxRetryAttempts, ex.Message);
