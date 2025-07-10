@@ -1,0 +1,8 @@
+{
+    "rest-client.environmentVariables": {
+        "test": {
+            "endpoint": "your_endpoint_here",
+            "api_key": "your_api_key_here"
+        }
+    }
+}
