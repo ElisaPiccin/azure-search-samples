@@ -1,0 +1,6 @@
+# Other variables read from .vscode/settings.json
+@index_name = product-catalog-index
+
+### Get Index
+GET {{endpoint}}/indexes/{{index_name}}?api-version=2024-07-01
+api-key: {{api_key}}
